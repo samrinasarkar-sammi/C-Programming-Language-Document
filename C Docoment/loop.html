@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>C Looping Statement </title>
+
+        <!--Fontfamily insert-->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+       <!--Favicon-->
+       <link rel="icon" href="images/c lan.png" type="image/png">
+
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+
+        <!--Menu--> 
+
+    <div class="nav">
+        <div class="logo">
+            <img src="images/c lan.png" alt="Picture not found" width="70px">
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="condition.html" target="_blank">C Condition</a></li>
+                <li><a href="loop.html" target="_blank">C Loop</a></li>
+            </ul>
+        </div>
+        
+    </div>
+
+
+    <section class="data3">
+                
+        <h2>Loops in C: For, While, Do While looping Statements</h2>
+
+    </section>
+
+    <div class="loop">
+        <p><b><i>Looping Statements in C</i></b> execute the sequence of statements many times until the stated condition becomes false. A loop in C consists of two parts, a body of a loop and a control statement. The control statement is a combination of some conditions that direct the body of the loop to execute until the specified condition becomes false. The purpose of the C loop is to repeat the same code a number of times.</p>
+
+        <p class="lpar">C programming language provides us with three types of loop constructs:</p>
+
+        <div class="tloop">
+            <div class="ldiv1">for Loop</div>
+            <div class="ldiv2">while Loop</div>
+            <div class="ldiv3">do-while loop</div>
+        </div>
+
+        <table border="1" class="tab3">
+            <tr>
+                <th>LOOP AND DESCRIPTIONS</th>
+            </tr>
+
+            <tr>
+                <td>
+                    <h3>For Loop</h3>
+                    <p>For Loop is used to execute set of statementsrepeatedlyuntil the condition is true.
+
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <h3>While Loop</h3>
+                    <p>While loop first checks the condition if the condition is true then control goes inside the loop body otherwise goes outside of the body.
+
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <h3>DO..While Loop</h3>
+                    <p>A do while loop is a control flow statement that executes a block of code at least once, and then repeatedly executes the block, or not, depending on a given condition at the end of the block (in while).
+
+                    </p>
+                </td>
+            </tr>
+            
+        </table>
+    </div>
+<!--For Loop-->
+
+
+<section class="cond1">
+<div class="left1">
+    <h2>For Loop</h2>
+    <p> <b>A for loop</b> is a repetition control structure that allows you to efficiently write a loop that needs to execute a specific number of times.</p>
+
+    <h3>Syntax</h3>
+
+    <pre class="expree">
+        for (initial value; condition; incrementation or decrementation ) 
+     {
+        statements;
+      }
+    </pre>
+
+    <br>
+   <ul class="looplist">
+       <li>The initial value of the for loop is performed only once.</li>
+
+       <li>Next, the condition is evaluated. If it is true, the body of the loop is executed. If it is false, the body of the loop does not execute.</li>
+
+       <li>The incrementation/decrementation increases (or decreases) the counter by a set value.</li>
+   </ul> 
+
+   <figure class="fig">
+       <img src="images/c-for-loop.png">
+       <figcaption>FlowChart of For Loop</figcaption>
+   </figure>
+
+   <br>
+   <p class="show">Let's see a simple example of C language for loop: </p>
+
+   <br>
+   
+   <pre class="code">
+    #include<stdio.h>
+        int main()
+        {
+            int number;
+            for(number=1;number<=10;number++)	//print 1-10 numbers
+            {
+                printf("%d\n",number);		//to print the number
+            }
+            return 0;
+        }
+    </pre>
+
+    <br>
+
+    <h3 class="out">Output:</h3>
+
+    <pre class="output1">
+        1
+        2
+        3
+        4
+        5
+        6
+        7
+        8
+        9
+        10</pre>
+
+    
+</div> 
+</section>
+
+<!--While Loop-->
+<section class="cond1">
+<div class="left1">
+    <hr>
+    <h2>While Loop</h2>
+    <p><b>A while loop</b> is the most straightforward looping structure. While loop syntax in C programming language is as follows:</p>
+
+    <h3>Syntax</h3>
+
+    <pre class="expree1">
+        while (condition) {
+            // the body of the loop 
+        }
+    </pre>
+
+    <br>
+   <ul class="looplist">
+       <li>If condition is true, statements inside the body of while loop are executed. Then, condition is evaluated again.</li>
+
+       <li>The process goes on until condition is evaluated to false.</li>
+
+       <li>If condition is false, the loop terminates (ends).</li>
+   </ul> 
+
+   <figure class="fig">
+       <img src="images/c-while-loop.png">
+       <figcaption class="cap">FlowChart of While Loop</figcaption>
+   </figure>
+
+   <br>
+   <p class="show">Let's see a simple example of C language while loop: </p>
+
+   <br>
+   
+   <pre class="code1">
+    #include <stdio.h>
+        int main() {
+          int i = 1;
+            
+          while (i <= 5) {
+            printf("%d\n", i);
+            ++i;
+          }
+        
+          return 0;
+        }
+    </pre>
+
+    <br>
+
+    <h3 class="out">Output:</h3>
+
+    <pre class="output1">
+        1
+        2
+        3
+        4
+        5
+        </pre>
+
+    
+</div> 
+</section>
+
+
+
+<!--do...While Loop-->
+<section class="cond1">
+    <div class="left1">
+        <hr>
+        <h2>DO-While Loop</h2>
+        <p><b>A do-while loop</b> is similar to the <i>while loop</i> with one important difference. The body of do...while loop is executed at least once.</p>
+    
+        <h3>Syntax</h3>
+    
+        <pre class="expree">
+            do {
+                statements
+              } while (condition);
+        </pre>
+    
+        <br>
+       <ul class="looplist">
+           <li>The body of do...while loop is executed once. Only then, the condition is evaluated.</li>
+    
+           <li>If condition is true, the body of the loop is executed again and condition is evaluated once more</li>
+    
+           <li>This process goes on until condition becomes false.</li>
+           <li>If condition is false, the loop ends.</li>
+       </ul> 
+    
+       <figure class="fig">
+           <img src="images/c-do-while-loop.png">
+           <figcaption>FlowChart of Do...While Loop</figcaption>
+       </figure>
+    
+       <br>
+       <p class="show">Let's see a simple example of C language do-while loop: </p>
+    
+       <br>
+       
+       <pre class="code">
+        #include <stdio.h>
+    
+            int main () {
+               int a = 10;
+               do {
+                  printf("%d\n", a);
+                  a = a + 1;
+               }while( a < 16 );
+             
+               return 0;
+            }
+        </pre>
+    
+        <br>
+    
+        <h3 class="out">Output:</h3>
+    
+        <pre class="output1">
+            10
+            11
+            12
+            13
+            14
+            15
+            </pre>
+    
+        
+    </div> 
+</section>
+
+    <br>
+    <section class="select">
+        <h2>Which loop to Select?</h2>
+        <p>Selection of a loop is always a tough task for a programmer, to select a loop do the following steps:</p>
+
+        <ul class="selist">
+            <li>Analyze the problem and check whether it requires a pre-test or a post-test loop.</li>
+            <li>If pre-test is required, use a while or for a loop</li>
+            <li>If post-test is required, use a do-while loop.</li>
+        </ul>
+    </section>
+
+ <!--LOOP CONTROL-->
+    <section class="data4">
+        <hr>
+        <h3>Loop Control Statements</h3>
+        <p>Loop control statements change execution from its normal sequence. When execution leaves a scope, all automatic objects that were created in that scope are destroyed.</p>
+
+        <div class="loopc">
+            <div>
+                <p class="oper">C supports the following control statements.</p>
+
+            <ol class="list1">
+                <li>Break statement</li>
+                <li>Continue statement</li>
+                <li>GOTO statement</li>
+            </ol>
+            </div>
+
+            <div>
+                <img src="images/laptop.png"> 
+            </div>
+        </div>
+
+           
+    </section>
+
+    <section class="cond1">
+        <div class="left1">
+            
+            <h2 class="ielse">break statement in C</h2>
+            <p><b><i>The break statement</i></b> is used mainly in the switch statement. It is also useful for immediately stopping a loop.</p>
+            <br>
+            <p>If we are using nested loops, the break statement will stop the execution of the innermost loop and start executing the next line of code after the block.</p>
+
+            <h3>Syntax</h3>
+
+            <pre class="expree">
+                break;
+            </pre>
+
+            <br>
+           <p><b>The purpose the break statement</b> is to break out of a loop early. For example if the following code asks a use input a integer number x. If x is divisible by 5, the break statement is executed and this causes the exit from the loop.</p> 
+
+            
+        </div>
+
+        <div class="right5">
+            <img src="images/break_statement.jpg">
+        </div>
+    </section>
+
+
+    <section class="cond1">
+
+        <div class="left2">
+            <img src="images/continue_statement.jpg">
+        </div>
+
+
+        <div class="right6">
+            
+            <h2>continue statement in C</h2>
+            <p><b><i>The continue statement</i></b> C programming works somewhat like the break statement. Instead of forcing termination, it forces the next iteration of the loop to take place, skipping any code in between.</p>
+            <br>
+            <p>For the for loop, continue statement causes the conditional test and increment portions of the loop to execute. For the while and do...while loops, continue statement causes the program control to pass to the conditional tests.</p>
+
+            <h3>Syntax</h3>
+
+            <pre class="expree1">
+                continue;
+            </pre>
+
+            
+        </div>
+
+    </section>
+
+
+    <section class="cond1">
+        <div class="left1">
+            
+            <h2 class="ielse">goto statement in C</h2>
+            <p><b><i>The goto statement</i></b> in C programming provides an unconditional jump from the 'goto' to a labeled statement in the same function..</p>
+
+            <h3>Syntax</h3>
+
+            <pre class="expree">
+                goto label;
+                ..
+                .
+                label: statement;
+            </pre>
+
+            <br>
+           <p><b>NOTE - </b> Use of goto statement is highly discouraged in any programming language because it makes difficult to trace the control flow of a program, making the program hard to understand and hard to modify. Any program that uses a goto can be rewritten to avoid them.</p> 
+
+            
+        </div>
+
+        <div class="right5">
+            <img src="images/goto_statement.jpg">
+        </div>
+    </section>
+
+    <br> 
+    
+    <div class="footer">
+        <h3>
+            All rights reserved by SAMRINA SARKAR SAMMI.
+        </h3>
+    </div>
+</body>

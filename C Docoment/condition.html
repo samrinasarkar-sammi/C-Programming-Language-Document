@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>C Conditional Statement </title>
+
+        <!--Fontfamily insert-->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+       <!--Favicon-->
+       <link rel="icon" href="images/c lan.png" type="image/png">
+
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+
+    <body>
+
+         <!--Menu--> 
+
+    <div class="nav">
+        <div class="logo">
+            <img src="images/c lan.png" alt="Picture not found" width="70px">
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="condition.html" target="_blank">C Condition</a></li>
+                <li><a href="loop.html" target="_blank">C Loop</a></li>
+            </ul>
+        </div>
+        
+    </div>
+
+
+    <section class="data2">
+                
+        <h2>Conditional Statements : if, else, switch</h2>
+
+    </section>
+
+    <div class="cond">
+
+        <p><b>Conditional Statements in C</b> programming are used to make decisions based on the conditions. Conditional statements execute sequentially when there is no condition around the statements. If you put some condition for a block of statements, the execution flow may change based on the result evaluated by the condition. This process is called decision making in ‘C.’</p>
+
+        <p class="par">There are following types of conditional statements in C.</p>
+
+        <ol class="list1">
+            <li>If statement</li>
+            <li>If-Else statement</li>
+            <li>Nested If-else statement</li>
+            <li>Switch statement
+            </li>
+            
+        </ol>
+    </div>
+<!--IF Statement-->
+
+    <section class="cond1">
+        <div class="left1">
+            <h2>If Statement</h2>
+            <p> If statement is responsible for modifying the flow of execution of a program. If statement is always used with a condition. The condition is evaluated first before executing any statement inside the body of If.</p>
+
+            <h3>Syntax</h3>
+
+            <pre class="expree">
+                if(condition)
+                {
+                    instruction;
+                }
+            </pre>
+
+            <br>
+           <p>The condition evaluates to either true or false. True is always a non-zero value, and false is a value that contains zero. Instructions can be a single instruction or a code block enclosed by curly braces { }.</p> 
+
+           <br>
+           <p class="show">Let's see a simple example of C language if statement.</p>
+
+           <br>
+           
+           <pre class="code">
+            #include< stdio.h >
+            int main()
+            {
+                int num1=45;
+                int num2=2;
+                if(num1 < num2)		//test-condition
+                {
+                    printf("num2 is smaller than num1");
+                }
+                return 0;
+            }
+            </pre>
+
+            <br>
+
+            <h3>Output:</h3>
+
+            <pre class="output">num2 is smaller than num1</pre>
+
+            
+        </div>
+
+        <div class="right1">
+            <img src="images/ifstatement.png">
+        </div>
+       
+    </section>
+
+
+<!--If-Else Statement-->
+
+    <section class="cond1">
+        <div class="left1">
+            <hr>
+            <h2 class="ielse">If-else Statement</h2>
+            <p> The if-else statement is used to perform two operations for a single condition. The if-else statement is an extension to the if statement using which, we can perform two different operations, i.e., one is for the correctness of that condition, and the other is for the incorrectness of the condition.</p>
+
+            <h3>Syntax</h3>
+
+            <pre class="expree1">
+                if (test-expression)
+                    {
+                        True block of statements
+                    }
+                    Else
+                    {
+                        False block of statements
+                    }
+                Statements;
+                    
+            </pre>
+
+            <br>
+           <p>If the value of test-expression if false, then the false block of statements will be executed. In any case, after the execution, the control will be automatically transferred to the statements appearing outside the block of If.</p> 
+
+           <br>
+           <p class="show">Let's see a simple example of C language if-else statement.</p>
+
+           <br>
+           
+           <pre class="code1">
+            #include< stdio.h >
+            int main()
+            {
+                int num=19;
+                if(num < 10)
+                {
+                    printf("The value is less than 10");
+                }
+                else
+                {
+                    printf("The value is greater than 10");
+                }
+                return 0;
+            }
+            </pre>
+
+            <br>
+
+            <h3>Output:</h3>
+
+            <pre class="output">The value is greater than 10</pre>
+
+            
+        </div>
+
+        <div class="right2">
+            <img src="images/if-else-statement.png">
+        </div>
+    </section>
+
+
+<!--Nested if-else statement-->
+
+    <section class="cond1">
+        <div class="left1">
+            
+            <h2>Nested Else-if statement</h2>
+            <p>The nested if...else statement is used when a program requires more than one test expression. It is also called a multi-way selection statement. When a series of the decision are involved in a statement, we use if else statement in nested form.</p>
+
+            <h3>Syntax</h3>
+
+            <pre class="expree2">
+                if (test - expression 1) {
+                    statement1;
+                } else if (test - expression 2) {
+                    Statement2;
+                } else if (test - expression 3) {
+                    Statement3;
+                } else if (test - expression n) {
+                    Statement n;
+                } else {
+                    default;
+                }
+                Statement x;
+                
+            </pre>
+
+            <br>
+           <p>Whenever a true test-expression if found, statement associated with it is executed. When all the n test-expressions becomes false, then the default else statement is executed.</p> 
+
+           <br>
+           <p class="show">Let's see a simple example of C language if-else statement.</p>
+
+           <br>
+           
+           <pre class="code2">
+            #include< stdio.h >
+            int main()
+            {
+                int marks=83;
+                if(marks > 75){
+                    printf("First class");
+                }
+                else if(marks > 65){
+                    printf("Second class");
+                }
+                else if(marks > 55){
+                    printf("Third class");
+                }
+                else{
+                    printf("Fourth class");
+                }
+                return 0;
+            }</pre>
+
+            <br>
+
+            <h3>Output:</h3>
+
+            <pre class="output">First class</pre>
+
+            
+        </div>
+
+        <div class="right3">
+            <img src="images/nested_if_else.png">
+        </div>
+    </section>
+
+<!--Switch Statement-->
+
+    <section class="cond1">
+        <div class="left1">
+            <hr>
+            <h2 class="ielse">Switch statement</h2>
+            <p>switch statement acts as a substitute for a long if-else-if ladder that is used to test a list of cases. A switch statement contains one or more case labels which are tested against the switch expression. When the expression match to a case then the associated statements with that case would be executed.</p>
+
+            <h3>Syntax</h3>
+
+            <pre class="expree">
+                Switch (expression)
+                    {
+                     case value1:
+                     //Statements 
+                     break;
+                     case value 2:
+                     //Statements
+                     break; 
+                     case value 3:
+                     //Statements 
+                     case value n:
+                     //Statements
+                     break;
+                     Default:
+                     //Statements
+                    }
+                
+            </pre>
+
+            <br>
+           <p>Whenever a true test-expression if found, statement associated with it is executed. When all the n test-expressions becomes false, then the default else statement is executed.</p> 
+
+           <br>
+           <p class="show">Let's see a simple example of C language if-else statement.</p>
+
+           <br>
+           
+           <pre class="code3">
+            #include<stdio.h>  
+                int main(){    
+                int number=0;     
+                printf("enter a number:");    
+                scanf("%d",&number);    
+                switch(number){    
+                case 10:    
+                printf("number is equals to 10");    
+                break;    
+                case 50:    
+                printf("number is equal to 50");    
+                break;    
+                case 100:    
+                printf("number is equal to 100");    
+                break;    
+                default:    
+                printf("number is not equal to 10, 50 or 100");    
+                }    
+                return 0;  
+                }   
+            </pre>
+
+            <br>
+
+            <h3>Output:</h3>
+
+            <pre class="output">enter a number:4
+                number is not equal to 10, 50 or 100</pre>
+
+            
+        </div>
+
+        <div class="right4">
+            <img src="images/switch (1).png">
+        </div>
+    </section>
+
+    <div class="footer">
+        <h3>
+            All rights reserved by SAMRINA SARKAR SAMMI.
+        </h3>
+    </div>
+    
+</body>
